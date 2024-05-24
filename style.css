@@ -1,0 +1,115 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+background-color: rgb(232, 243, 252);
+font-family:'Courier New', Courier, monospace;
+
+}
+
+.menu-bar{
+  background: rgb(141, 191, 248);
+  text-align: center;
+}
+
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+  color: azure;
+}
+
+.menu-bar ul li{
+  width: 120px;
+  margin: 14px;
+  padding: 15px;
+}
+
+.menu-bar ul li a{
+  text-decoration: none;
+  color: azure;
+}
+
+.active, .menu-bar ul li:hover{
+background: rgb(98, 141, 223);  
+border-radius: 0%;
+
+}
+
+.sub-menu-1{
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  background:rgb(141, 191, 248);
+  margin: 13px;
+  margin-left: -13px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted white;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last :last-child{
+  border-bottom: none;
+}
+
+.sub-menu-2{
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-2{
+  display: block;
+  position: absolute;
+  background:rgb(141, 191, 248);
+  margin: 15px;
+  margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul{
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted white;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul li:last :last-child{
+  border-bottom: none;
+}
+
+h1{
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+}
+
+h2{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.logo{
+  width: 30px;
+  height: 220px;
+}
